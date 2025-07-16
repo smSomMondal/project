@@ -32,7 +32,7 @@ const Login = () => {
           "Content-Type": "application/json",
         },
       });
-      //console.log(userRes);
+      console.log(userRes);
       if (userRes.status === 200) {
         const user = userRes.data;
         console.log(user);
@@ -41,6 +41,7 @@ const Login = () => {
         window.location.reload()       
       }
     } catch (error) {
+      console.log(error);
       if (error.response.status === 400){        
         alert(error.response.data.message);
       }
