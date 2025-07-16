@@ -8,7 +8,7 @@ import bodyParser from 'body-parser';
 import cartApi from './route/cartRoute.js';
 
 
-dotenv.config()
+dotenv.config({ path: '../.env' });
 const Port = process.env.PORT || 4000
 
 const app = express();

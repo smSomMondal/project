@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 import User from "../model/userModel.js";
 import dotenv from 'dotenv';
 
-dotenv.config();
+dotenv.config({ path: '../.env' });
 
 //by som
 const generateToken = (id) => {
