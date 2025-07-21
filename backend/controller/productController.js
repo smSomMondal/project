@@ -142,7 +142,7 @@ const deleteProduct = expressAsyncHandler(async (req, res) => {
 const getProduct = expressAsyncHandler(async (req, res) => {
     try {
         const { pId } = req.body;
-        const prod = await Product.find({sellerId: req.user._id});
+        const prod = await Product.find({sellerId: req.user._id}).populate('orderList');
         if (!prod) {
             return res.status(404).json({ message: "Product not found" });
         }

@@ -21,7 +21,7 @@
   },
   "scripts": {
   "build": "react-scripts build && npm run build --prefix backend",
-  "client": "react-scripts start",
+  "client": "cross-env PORT=3000 react-scripts start",
   "server": "npm i --prefix backend && npm start --prefix backend",
   "dev": "concurrently  \"npm i --prefix backend\" \"npm run server\" \"npm run client\"  ",
   "start": "npm run dev",
