@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Start Backend Server",
+			"type": "shell",
+			"command": "cd \"${workspaceFolder}\\backend\" && npm run start",
+			"problemMatcher": [],
+			"group": "none",
+			"isBackground": true
+		},
+		{
+			"label": "Restart Backend Server",
+			"type": "shell",
+			"command": "cd \"${workspaceFolder}\\backend\" && npm run start",
+			"problemMatcher": [],
+			"group": "none",
+			"isBackground": true
+		}
+	]
+}
