@@ -1,4 +1,4 @@
-# ShopNow [E-Commerse Website](https://ptest-2.onrender.com)
+# 🛒🛍️✨ShopNow [E-Commerse Website](https://ptest-2.onrender.com)
 This is an E-Commerse Website for handling both Buyer and Seller part. It has multiple product Catagory and SubCatagory. Buyer can browes product, add it to cart and order it which will reflect it in his/her profile. Seller can add a product, edit it information like quantity and prise, also can aprove or cancel the product's orders.
 
 
@@ -23,6 +23,20 @@ project/
       ├── postcss.config.js
       ├── tailwind.config.js
       ├── .gitignore
+```
+## ⚙️`.env` Configaration
+- backend/.env
+```bash
+PORT=5000
+DB_URL="mongodb_url_with_your_userId_Password"
+JWT_SECRET="your-secret-pin"
+JWT_EXPIRES_IN="6d"
+```
+- frontend/.env
+```bash
+REACT_APP_BACKEND_SERVER_URL="http://127.0.0.1:PortNo"
+REACT_APP_CLOUDINARY_PRESET_NAME=""
+REACT_APP_CLOUDINARY_CLOUDE_KEY=""
 ```
 ## Available Scripts
 
