@@ -1,5 +1,29 @@
 # ShopNow [E-Commerse Website](https://ptest-2.onrender.com)
 This is an E-Commerse Website for handling both Buyer and Seller part. It has multiple product Catagory and SubCatagory. Buyer can browes product, add it to cart and order it which will reflect it in his/her profile. Seller can add a product, edit it information like quantity and prise, also can aprove or cancel the product's orders.
+
+
+## 📁📁 Project Structure
+
+```plaintext
+project/
+├── backend/
+      ├── model/
+      ├── controller/
+      ├── middlewere/
+      ├── route/
+      ├── server.js
+      ├── .env
+      ├── package.json
+├── frontend/
+      ├── public/
+      ├── src/
+      ├── .env
+      ├── package.json
+      ├── .npmrc
+      ├── postcss.config.js
+      ├── tailwind.config.js
+      ├── .gitignore
+```
 ## Available Scripts
 
 In the project directory, you can run yy:
