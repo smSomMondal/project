@@ -37,7 +37,7 @@ const Signup = () => {
         setLoading(true);
         try {
             const { rePassword, ...postData } = formData;
-            const res = await axios.post('http://127.0.0.1:5000/user/signup', postData);
+            const res = await axios.post('/user/signup', postData);
             if (res.status === 200) {
                 navigate("/login");
             }
